@@ -13,8 +13,16 @@ namespace eTickets.Models
         public int Id { get; set; }
 
 
+        [Display(Name = "Profile Picture")]
+        [Required(ErrorMessage = "Profile Picture is required")]
         public string ProfilePictureUrl { get; set; }
+
+        [Display(Name = "Full Name")]
+        [Required(ErrorMessage = "Full Name is required")]
         public string FullName { get; set; }
+
+        [Display(Name = "Bio")]
+        [Required(ErrorMessage = "Bio is required")]
         public string Bio { get; set; }
 
         //relationships

@@ -15,13 +15,27 @@ namespace eTickets.Models
         public int Id { get; set; }
 
 
+        [Display(Name = "Movie name")]
         public string Name { get; set; }
+
+        [Display(Name = "Description")]
         public string Description { get; set; }
+
+        [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
+
+        [Display(Name = "End Date")]
         public DateTime EndDate { get; set; }
+
+        [Display(Name = "Price")]
         public double Price { get; set; }
+
+        [Display(Name = "Movie Category")]
         public MovieCategory MovieCategory { get; set; }
+
+        [Display(Name = "Image")]
         public string ImageUrl { get; set; }
+
 
         //relationships
         public List<Actor_Movie> Actors_Movies { get; set; }
